@@ -12,12 +12,12 @@ AWS account has three lambda functions in the cape town region. All done with th
 - is working well. It currently scans all buyable offers and checks if we have squatters. 
 - 23/03/2022 - using more data from offers API and added flag
 - Has Buybox Alerts, Swing time share a database.
-   checks for squatters\  
-   ```/usr/bin/php /var/www/html/application.php buybox:check```\  
-   notfies us of squatters\  
-   ```/usr/bin/php /var/www/html/application.php buybox:notify```\  
-   notfies us of squatters once a week even if offer not buyable\   
-   ```/usr/bin/php /var/www/html/application.php buybox:notify  --checkAllOffers```\  
+   checks for squatters    
+   ```/usr/bin/php /var/www/html/application.php buybox:check```    
+   notfies us of squatters    
+   ```/usr/bin/php /var/www/html/application.php buybox:notify```    
+   notfies us of squatters once a week even if offer not buyable  
+   ```/usr/bin/php /var/www/html/application.php buybox:notify  --checkAllOffers```    
 
 ## Swing Time. Runs on the buybox server.
  ```/usr/bin/php /var/www/html/application.php priceswing:swingtime```
