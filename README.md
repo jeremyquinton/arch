@@ -21,26 +21,20 @@ AWS account has three lambda functions in the cape town region. All done with th
 
 ## Swing Time. Runs on the buybox server.
  ```/usr/bin/php /var/www/html/application.php priceswing:swingtime```
-- use to adjust prices for competitors. 
-- TODO : would be nice to have a UI on top of it. 
-- TODO : supplier specific logic.  
+- use to adjust prices for competitors once we detect them with buybox alerts.  
+- TODO : would be nice to have a UI on top of it.   
+- TODO : supplier specific logic.    
 
-## Takealot Sales
+## Takealot Sales. Runs on the buybox server. Seperate php app. 
 ```/root/a.sh && /usr/bin/php /var/www/takealot-sales/application.php takealotsales:fetch --period today```
 - Has Takealot sales running which is pulled in from the takealot api.
+- TODO whatever metrics we want to add.
 
+## Takealot Stock Metrics. Runs on the buybox server. Part of the sales app.
 - Has Stock metrics store in the stockLevelMetrics table
 
+## Takealot Keyword Metrics. Runs on the buybox server. Part of the sales app.
 
-
-
-
- 
-  Below notifies us of products which aren't buyable in the seller portal but another seller is winning the buybox
-  Previously we did not get this information
-  
-
-- swing time then needs a manual config and can win buybox back - happy to have manual for now. Relies on the one service endpoint for getting product competitor page
 
 
 
